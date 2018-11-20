@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[[ "\${lines[${1:0}]}" = "${2:some value}" ]]]></content>
+	<tabTrigger>lines</tabTrigger>
+	<scope>source.shell.bats</scope>
+	<description>[ "$lines[…]" = "…"]</description>
+</snippet>
