@@ -36,6 +36,11 @@ The following snippets/commands exist:
 * `lines` - inserts a `[ "${lines[0]}" = "some value" ]` assertion.
 * `status` - inserts a `[ "$status" -eq 0 ]` assertion.
 
+## License
+
+This project was released under the [MIT][] License.
+
 
 [Bats]: https://github.com/sstephenson/bats
+[MIT]: https://github.com/sptndc/sublime-bats/blob/master/LICENSE
 [@sstephenson]: https://github.com/sstephenson
