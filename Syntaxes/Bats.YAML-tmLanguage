@@ -541,7 +541,7 @@ repository:
     - name: support.function.builtin.bats
       match: (?<=^|\s)(?::|\.)(?=\s|;|&|$)
     - name: support.function.builtin.bats
-      match: (?<![-/])\b(?:alias|bg|bind|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|logout|popd|printf|pushd|pwd|read|readonly|set|shift|shopt|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\b
+      match: (?<![-/])\b(?:alias|bg|bind|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|load|logout|popd|printf|pushd|pwd|read|readonly|run|set|shift|shopt|skip|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\b
 
   variable:
     patterns:
