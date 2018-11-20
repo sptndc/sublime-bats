@@ -17,6 +17,8 @@ patterns:
 
 - include: '#function-definition'
 
+- include: '#test-definition'
+
 - include: '#string'
 
 - include: '#variable'
@@ -542,6 +544,22 @@ repository:
       match: (?<=^|\s)(?::|\.)(?=\s|;|&|$)
     - name: support.function.builtin.bats
       match: (?<![-/])\b(?:alias|bg|bind|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|load|logout|popd|printf|pushd|pwd|read|readonly|run|set|shift|shopt|skip|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\b
+
+  test-definition:
+    patterns:
+    - contentName: entity.name.test.bats
+      begin: \s*(@test)
+      beginCaptures:
+        '1': {name: storage.type.test.bats}
+      end: (?=\s*\{)
+      patterns:
+      - begin: '"'
+        beginCaptures:
+          '0': {name: punctuation.definition.string.begin.bats}
+        end: '"'
+        endCaptures:
+          '0': {name: punctuation.definition.string.end.bats}
+      - include: $self
 
   variable:
     patterns:

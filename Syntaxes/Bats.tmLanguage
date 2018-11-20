@@ -42,6 +42,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#test-definition</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#string</string>
 		</dict>
 		<dict>
@@ -1750,6 +1754,57 @@
 					<string>(?&lt;![-/])\b(?:alias|bg|bind|builtin|caller|cd|command|compgen|complete|dirs|disown|echo|enable|eval|exec|exit|false|fc|fg|getopts|hash|help|history|jobs|kill|let|load|logout|popd|printf|pushd|pwd|read|readonly|run|set|shift|shopt|skip|source|suspend|test|times|trap|true|type|ulimit|umask|unalias|unset|wait)\b</string>
 					<key>name</key>
 					<string>support.function.builtin.bats</string>
+				</dict>
+			</array>
+		</dict>
+		<key>test-definition</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\s*(@test)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.test.bats</string>
+						</dict>
+					</dict>
+					<key>contentName</key>
+					<string>entity.name.test.bats</string>
+					<key>end</key>
+					<string>(?=\s*\{)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>"</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.string.begin.bats</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>"</string>
+							<key>endCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.string.end.bats</string>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
