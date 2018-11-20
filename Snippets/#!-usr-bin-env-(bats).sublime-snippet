@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[#!/usr/bin/env bats
+]]></content>
+	<tabTrigger>bats</tabTrigger>
+	<scope>source.shell.bats</scope>
+	<description>#!/usr/bin/env bats</description>
+</snippet>
