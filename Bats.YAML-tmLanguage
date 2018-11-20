@@ -72,8 +72,8 @@ repository:
   compound-command:
     patterns:
     - name: meta.scope.logical-expression.bats
-      begin: (\[{2})
-      end: (\]{2})
+      begin: (\[{1,2})
+      end: (\]{1,2})
       captures:
         '1': {name: punctuation.definition.logical-expression.bats}
       patterns:
