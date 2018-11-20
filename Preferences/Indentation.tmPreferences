@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Indentation</string>
+	<key>scope</key>
+	<string>source.shell.bats</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>^\s*(\}|(elif|else|fi|esac|done)\b)</string>
+		<key>increaseIndentPattern</key>
+		<string>(?x)
+			^\s*(elif|else|case)\b
+		|   ^.*(\{|\b(do)\b)\s*$
+		|   ^.*\bthen\b\s*$
+		</string>
+		<key>indentNextLinePattern</key>
+		<string>^.*[^\\]\\$</string>
+		<key>disableIndentNextLinePattern</key>
+		<string>^\s*then\s*$</string>
+		<key>bracketIndentNextLinePattern</key>
+		<string>^\s*if\b.*(?!\bthen\b)$</string>
+	</dict>
+	<key>uuid</key>
+	<string>6212CE7B-EBF0-4F64-8721-A3D8F9A600E8</string>
+</dict>
+</plist>
