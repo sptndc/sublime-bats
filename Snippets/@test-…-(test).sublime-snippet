@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[@test "${1:test something}" {
+	${2:# statements}
+}]]></content>
+	<tabTrigger>test</tabTrigger>
+	<scope>source.shell.bats</scope>
+	<description>@test …</description>
+</snippet>
