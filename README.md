@@ -3,6 +3,26 @@
 Bash Automated Testing System ([Bats][]) is a test library running in
 Bash/Shell, created by [@sstephenson][].
 
+## Installation
+
+Go to your Sublime Text Packages directory.
+
+Sublime Text 2:
+* Linux: `~/.config/sublime-text-2/Packages`
+* macOS: `~/Library/Application\ Support/Sublime\ Text\ 2/Packages`
+* Windows: `%APPDATA%/Sublime Text 2/Packages`
+
+Sublime Text 3:
+* Linux: `~/.config/sublime-text-3/Packages`
+* macOS: `~/Library/Application\ Support/Sublime\ Text\ 3/Packages`
+* Windows: `%APPDATA%/Sublime Text 3/Packages`
+
+Clone the repository using a command below:
+
+~~~sh
+$ git clone https://github.com/sptndc/sublime-bats.git Bats
+~~~
+
 ## Usage
 
 All `.bats` files should automatically be assigned the `Bash
