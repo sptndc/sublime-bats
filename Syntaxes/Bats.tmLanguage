@@ -1763,8 +1763,8 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\s*(@test)</string>
-					<key>beginCaptures</key>
+					<string>(?&lt;=\s|^)(@test)(?=\s|$)</string>
+					<key>captures</key>
 					<dict>
 						<key>1</key>
 						<dict>
@@ -1772,15 +1772,13 @@
 							<string>storage.type.test.bats</string>
 						</dict>
 					</dict>
-					<key>contentName</key>
-					<string>entity.name.test.bats</string>
 					<key>end</key>
-					<string>(?=\s*\{)</string>
+					<string>(?=\s*\{|$)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>begin</key>
-							<string>"</string>
+							<string>(?&lt;=\s|^)\'|\"</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>0</key>
@@ -1789,8 +1787,10 @@
 									<string>punctuation.definition.string.begin.bats</string>
 								</dict>
 							</dict>
+							<key>contentName</key>
+							<string>entity.name.test.bats</string>
 							<key>end</key>
-							<string>"</string>
+							<string>\"|\'(?=\s|$)</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>0</key>
@@ -1799,10 +1799,6 @@
 									<string>punctuation.definition.string.end.bats</string>
 								</dict>
 							</dict>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
 						</dict>
 					</array>
 				</dict>

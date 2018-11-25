@@ -547,19 +547,18 @@ repository:
 
   test-definition:
     patterns:
-    - contentName: entity.name.test.bats
-      begin: \s*(@test)
-      beginCaptures:
+    - begin: (?<=\s|^)(@test)(?=\s|$)
+      end: (?=\s*\{|$)
+      captures:
         '1': {name: storage.type.test.bats}
-      end: (?=\s*\{)
       patterns:
-      - begin: '"'
+      - contentName: entity.name.test.bats
+        begin: (?<=\s|^)\'|\"
         beginCaptures:
           '0': {name: punctuation.definition.string.begin.bats}
-        end: '"'
+        end: \"|\'(?=\s|$)
         endCaptures:
           '0': {name: punctuation.definition.string.end.bats}
-      - include: $self
 
   variable:
     patterns:
