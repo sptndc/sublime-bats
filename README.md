@@ -6,21 +6,27 @@ A [Bats](https://github.com/sstephenson/bats) test for Sublime Text.
 
 ### Package Control
 
-The easiest way to install is using Sublime's [Package Control](https://packagecontrol.io/packages/Bats). It's
-listed as `Bats`.
+The easiest way to install using [Package Control](https://packagecontrol.io/).
 
 1. Open `Command Palette` using menu item `Tools → Command Palette...`
+
 2. Choose `Package Control: Install Package`
+
 3. Find `Bats` and hit `Enter`
 
 ### Manually
 
+If you prefer a manual approach, follow the steps below.
+
 1. Goto into Sublime Text Packages directory, which you can find
    using the menu item `Preferences -> Browse Packages...`
-2. Clone this repository using a command below:
-   ```
-   git clone https://github.com/sptndc/sublime-bats.git Bats
-   ```
+
+2. Clone this repository.
+
+    ```
+    git clone https://github.com/sptndc/sublime-bats.git Bats
+    ```
+
 3. Enjoy!
 
 ## Feature
