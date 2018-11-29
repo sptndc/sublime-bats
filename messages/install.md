@@ -1,7 +1,21 @@
-# Sublime Bats
+```
+   >=>>=>          >>       >===>>=====>   >=>>=>  
+   >>   >=>       >>=>           >=>     >=>    >=>
+   >>    >=>     >> >=>          >=>      >=>      
+   >==>>=>      >=>  >=>         >=>        >=>    
+   >>    >=>   >=====>>=>        >=>           >=> 
+   >>     >>  >=>      >=>       >=>     >=>    >=>
+   >===>>=>  >=>        >=>      >=>       >=>>=>  
+```
 
-Thank you for installing.
+Thank you for installing sublime-bats!
 
-For more information about this package please see:
+---
+
+For information about this package, please see:
 
 https://github.com/sptndc/sublime-bats
+
+For issues or feature requests, create a report to:
+
+https://github.com/sptndc/sublime-bats/issues
