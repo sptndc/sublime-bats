@@ -1763,7 +1763,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(?&lt;=\s|^)(@test)(?=\s|$)</string>
+					<string>(?&lt;=\s|^)(@test)\s+(\"|\')(.*)(\"|\')(?=\s|$)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -1771,34 +1771,56 @@
 							<key>name</key>
 							<string>storage.type.test.bats</string>
 						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.begin.bats</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.test.bats</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.string.end.bats</string>
+						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=\s*\{|$)</string>
+					<string>$</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>begin</key>
-							<string>(?&lt;=\s|^)\'|\"</string>
+							<string>\{</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>0</key>
 								<dict>
 									<key>name</key>
-									<string>punctuation.definition.string.begin.bats</string>
+									<string>punctuation.section.braces.begin.bats</string>
 								</dict>
 							</dict>
 							<key>contentName</key>
-							<string>entity.name.test.bats</string>
+							<string>meta.test-block.bats</string>
 							<key>end</key>
-							<string>\"|\'(?=\s|$)</string>
+							<string>\}</string>
 							<key>endCaptures</key>
 							<dict>
 								<key>0</key>
 								<dict>
 									<key>name</key>
-									<string>punctuation.definition.string.end.bats</string>
+									<string>punctuation.section.braces.end.bats</string>
 								</dict>
 							</dict>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>$self</string>
+								</dict>
+							</array>
 						</dict>
 					</array>
 				</dict>

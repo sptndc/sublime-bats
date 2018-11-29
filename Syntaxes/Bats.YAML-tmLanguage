@@ -547,18 +547,23 @@ repository:
 
   test-definition:
     patterns:
-    - begin: (?<=\s|^)(@test)(?=\s|$)
-      end: (?=\s*\{|$)
+    - begin: (?<=\s|^)(@test)\s+(\"|\')(.*)(\"|\')(?=\s|$)
+      end: $
       captures:
         '1': {name: storage.type.test.bats}
+        '2': {name: punctuation.definition.string.begin.bats}
+        '3': {name: entity.name.test.bats}
+        '4': {name: punctuation.definition.string.end.bats}
       patterns:
-      - contentName: entity.name.test.bats
-        begin: (?<=\s|^)\'|\"
+      - contentName: meta.test-block.bats
+        begin: \{
         beginCaptures:
-          '0': {name: punctuation.definition.string.begin.bats}
-        end: \"|\'(?=\s|$)
+          '0': {name: punctuation.section.braces.begin.bats}
+        end: \}
         endCaptures:
-          '0': {name: punctuation.definition.string.end.bats}
+          '0': {name: punctuation.section.braces.end.bats}
+        patterns:
+        - include: $self
 
   variable:
     patterns:
