@@ -1,4 +1,4 @@
 {
-    "install": "Messages/install.md",
-    "0.1.0": "Messages/changelog.md"
+    "install": "messages/install.md",
+    "0.1.0": "messages/changelog.md"
 }
