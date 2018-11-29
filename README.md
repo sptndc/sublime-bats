@@ -1,25 +1,27 @@
-# Bats test package for Sublime Text.
+# Sublime Bats
 
-Bash Automated Testing System ([Bats](https://github.com/sstephenson/bats))
-is a command tool for testing Bash/Shell.
+A [Bats](https://github.com/sstephenson/bats) test for Sublime Text.
 
 ## Installation
 
 ### Package Control
 
-The easiest way to install is using Sublime's [Package Control](https://packagecontrol.io/packages/Bats%20(Bash%20Automated%20Testing%20System)). It's
-listed as `Bats (Bash Automated Testing System)`.
+The easiest way to install is using Sublime's [Package Control](https://packagecontrol.io/packages/Bats). It's
+listed as `Bats`.
 
 1. Open `Command Palette` using menu item `Tools → Command Palette...`
 2. Choose `Package Control: Install Package`
-3. Find `Bats (Bash Automated Testing System)` and hit `Enter`
+3. Find `Bats` and hit `Enter`
 
 ### Manually
 
-1. [Download the tarball](https://github.com/sptndc/sublime-bats/releases)
-2. Extract and rename folder to `Bats`
-3. Copy folder into `Packages` directory, which you can find using
-   the menu item `Preferences → Browse Packages...`
+1. Goto into Sublime Text Packages directory, which you can find
+   using the menu item `Preferences -> Browse Packages...`
+2. Clone this repository using a command below:
+   ```
+   git clone https://github.com/sptndc/sublime-bats.git Bats
+   ```
+3. Enjoy!
 
 ## Feature
 
