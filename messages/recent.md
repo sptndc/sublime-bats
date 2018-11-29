@@ -1,4 +1,4 @@
-Sublime Bats 0.1.0
+Sublime Bats 0.1.1
 ==================
 
-* Initial public release.
+* Fix test block highlighting
