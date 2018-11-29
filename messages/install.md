@@ -16,6 +16,6 @@ For information about this package, please see:
 
 https://github.com/sptndc/sublime-bats
 
-For issues or feature requests, create a report to:
+For issues or feature requests, create a report that leads to:
 
 https://github.com/sptndc/sublime-bats/issues
