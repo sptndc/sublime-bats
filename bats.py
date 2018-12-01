@@ -69,6 +69,9 @@ class Bats():
             'working_dir': working_dir
         })
 
+    def cancel(self):
+        self.window.run_command('exec', {'kill': True})
+
     def get_bats_executable(self):
         bats_executable = which('bats')
         if bats_executable:
@@ -81,3 +84,9 @@ class BatsTestCommand(sublime_plugin.WindowCommand):
 
     def run(self):
         Bats(self.window).run()
+
+
+class BatsTestCancelCommand(sublime_plugin.WindowCommand):
+
+    def run(self):
+        Bats(self.window).cancel()
