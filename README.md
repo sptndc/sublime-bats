@@ -1,5 +1,7 @@
 # Sublime Bats
 
+[![GitHub release](https://img.shields.io/github/release/sptndc/sublime-bats.svg)](https://github.com/sptndc/sublime-bats/releases) [![Package Control](https://img.shields.io/packagecontrol/dt/Bats.svg)](https://packagecontrol.io/packages/Bats)
+
 A [Bats](https://github.com/sstephenson/bats) test for Sublime Text.
 
 ## Installation
