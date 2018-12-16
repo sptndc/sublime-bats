@@ -1,0 +1,37 @@
+%YAML 1.2
+# [Sublime]: https://www.sublimetext.com/docs/3/syntax.html
+# [Bats]:    https://github.com/sstephenson/bats
+--- #--------------------------------------------------------------------------
+
+name: Bash Automated Testing System (bats)
+
+scope: source.shell.bats
+
+file_extensions:
+  - bats
+
+#------------------------------------------------------------------------------
+contexts:
+
+  main:
+    - include: test-block
+    - include: scope:source.shell.bash
+
+  prototype:
+    - include: scope:source.shell.bash#prototype
+
+  test-block:
+    - match: (?<=\s|^)(@test)\s+(\"|\')(.*)(\"|\')(?=\s|$)
+      captures:
+        1: storage.type.test-block.bats
+        2: punctuation.definition.string.begin.bats
+        3: entity.name.test-block.bats
+        4: punctuation.definition.string.end.bats
+    - match: \{
+      scope: punctuation.section.braces.begin.bats
+      push:
+        - meta_content_scope: meta.test-block.bats
+        - match: \}
+          scope: punctuation.section.braces.end.bats
+          pop: true
+        - include: main
