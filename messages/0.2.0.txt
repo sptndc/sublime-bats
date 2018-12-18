@@ -1,0 +1,7 @@
+Sublime Bats 0.2.0
+==================
+
+* Added `Bats.sublime-syntax`. Now for the syntax, Bats includes standard Bash
+  syntax highlighting, and only mixes syntax highlighting for test-block.
+* Removed directory Syntaxes and Preferences.
+* Dropped support for Sublime Text 2.
