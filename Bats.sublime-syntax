@@ -23,9 +23,9 @@ contexts:
   test-block:
     - match: (?<=\s|^)(@test)\s+(\"|\')(.*)(\"|\')(?=\s|$)
       captures:
-        1: storage.type.test-block.bats
+        1: storage.type.keyword.function.test-block.bats
         2: punctuation.definition.string.begin.bats
-        3: entity.name.test-block.bats
+        3: entity.name.function.test-block.bats
         4: punctuation.definition.string.end.bats
     - match: \{
       scope: punctuation.section.braces.begin.bats
